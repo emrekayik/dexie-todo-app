@@ -1,14 +1,15 @@
-function App() {
+import Header from "./components/Header";
+import TodoList from "./components/TodoList/index.jsx";
 
+function App() {
   return (
     <>
-        <div>
-            <h1 className="text-3xl font-bold underline">
-                Hello world!
-            </h1>
-        </div>
+      <Header />
+      <div>
+        <TodoList />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
